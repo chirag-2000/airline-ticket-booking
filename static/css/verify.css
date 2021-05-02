@@ -1,0 +1,22 @@
+html,body { height: 100%; }
+
+body{
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	background-color: #efefef;
+}
+.logo {
+    padding: 25px 0;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-size: 30px;
+    color: #aaaaaa;
+    font-weight: bold;
+  }

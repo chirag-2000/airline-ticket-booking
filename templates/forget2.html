@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/forget2.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-form">
+        <div class="card-body">
+            <h3 class="logo">Change password</h3>
+            
+            <!--Password must contain one lowercase letter, one number, and be at least 7 characters long.-->
+            
+            <div class="card-text">
+                
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <a class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </a>
+    </div>
+    <form action="{{ url_for('update') }}" method="POST">
+                    <div class="form-group">
+                        <!-- <label for="exampleInputEmail1">Your new password</label> -->
+                        <input type="password" name="password" id="password" class="form-control form-control-sm" placeholder="Your new Password">
+                    </div>
+                    <div class="form-group">
+                       
+                        <input type="password" name="password" id="password" class="form-control form-control-sm" placeholder="Conform password">
+                    </div>
+                    <button type="submit"  value="submit" class="btn btn-primary btn-block submit-btn">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

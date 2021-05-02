@@ -1,0 +1,131 @@
+<html>
+<head>
+      <title>Flight Ticket Booking Form</title>
+	  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/book.css') }}">
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+	<body>
+		<a href="/back" class=btn>Back</a>
+        <h1 class="text1">BOOK TICKET</h1>
+		<form action="{{ url_for('search') }}" method="post">
+        <div class="booking-form-box">
+		 <!-- <div class="radio-btn">
+		 <input type="radio" class="btn" name="check" checked="checked"><span>Roundtrip</span>
+		 <input type="radio" class="btn" name="check"><span>One Way</span>
+		 <input type="radio" class="btn" name="check"><span>Multi-City</span>
+		 </div> -->
+		 
+		 <div class="booking-form">
+		
+		 <label right=50px>Flying From</label><br><select id="from" name="from" class="from" >
+		 <section>
+			<option value="IDR"  >Devi Ahilya Bai Holkar Airport </option>
+			<option value="STV" >Surat Airport </option>
+		   <option value="VTZ" >Vishakhapatnam Airport </option>
+		    <option value="GAU"> Lokpriya Gopinath Bordoloi International Airport </option>
+		   <option value="IMF">Imphal International International Airport </option>
+		   <option value="DEL"> Indira Gandhi International Airport  </option>
+		   <option value="TRV">Thiruvananthapuram International Airport  </option>
+		   <option value="AMD">Sardar Vallabhbhai Patel International Airport </option>
+		   <option value="BLR"> Kempegowda International Airport  </option>
+		   <option value="IXE"> Mangalore International Airport </option>
+		   <option value="NAG">Dr. Babasaheb Ambedkar International Airport   </option>
+		   <option value="BOM">Chhatrapati Shivaji International Airport    </option>
+		   <option value="SXR">Sheikhul Aalam International Airport    </option>
+		   <option value="PNQ">Pune Airport</option>
+		   <option value="JAI">Jaipur Airport</option>
+		   <option value="IXM">Madurai Airport</option>
+		   <option value="GOI">Dabolim Airport </option>
+		   <option value="IXB">Bagdogra International Airport</option>
+		   <option value="TRZ">Tiruchirappalli International Airport</option>
+		   <option value="MAA"> Chennai International Airport </option>
+		   <option value="CJB"> Coimbatore International Airport</option>
+		   <option value="HYD">Rajiv Gandhi International Airport</option>
+		   <option value="BBI">Biju Patnaik International Airport </option>
+		   <option value="VSN">Lal Bahadur Shastri International Airport</option>
+		   <option value="LKO">Chaudhary Charan Singh International Airport </option>
+		   <option value="CCU"> Netaji Subhash Chandra Bose International Airport</option>
+		   <option value="IXC">Chandigarh International Airport </option>
+		   <option value="CCJ">Calicut International Airport</option>
+		   <option value="COK"> Cochin International Airpor</option>
+		   <option value="CNN">Kannur International Airport</option>
+		   <option value="ATQ">Sri Guru Ram Dass Jee International Airport</option>
+			
+		</section>
+	</select><br><br>	
+	<label right=50px>Flying To</label><br><select id="to" name="to" class="to" >
+		<section>
+			<option value="IDR" >Devi Ahilya Bai Holkar Airport </option>
+			<option value="STV" >Surat Airport </option>
+		   <option value="VTZ" >Vishakhapatnam Airport </option>
+		    <option value="GAU"> Lokpriya Gopinath Bordoloi International Airport </option>
+		   <option value="IMF">Imphal International International Airport </option>
+		   <option value="DEL"> Indira Gandhi International Airport  </option>
+		   <option value="TRV">Thiruvananthapuram International Airport  </option>
+		   <option value="AMD">Sardar Vallabhbhai Patel International Airport</option>
+		   <option value="BLR"> Kempegowda International Airport  </option>
+		   <option value="IXE"> Mangalore International Airport </option>
+		   <option value="NAG">Dr. Babasaheb Ambedkar International Airport   </option>
+		   <option value="BOM">Chhatrapati Shivaji International Airport</option>
+		   <option value="SXR">Sheikhul Aalam International Airport    </option>
+		   <option value="PNQ">Pune Airport</option>
+		   <option value="JAI">Jaipur Airport</option>
+		   <option value="IXM">Madurai Airport</option>
+		   <option value="GOI">Dabolim Airport </option>
+		   <option value="IXB">Bagdogra International Airport</option>
+		   <option value="TRZ">Tiruchirappalli International Airport</option>
+		   <option value="MAA"> Chennai International Airport </option>
+		   <option value="CJB"> Coimbatore International Airport</option>
+		   <option value="HYD">Rajiv Gandhi International Airport</option>
+		   <option value="BBI">Biju Patnaik International Airport </option>
+		   <option value="VSN">Lal Bahadur Shastri International Airport</option>
+		   <option value="LKO">Chaudhary Charan Singh International Airport </option>
+		   <option value="CCU"> Netaji Subhash Chandra Bose International Airport</option>
+		   <option value="IXC">Chandigarh International Airport </option>
+		   <option value="CCJ">Calicut International Runway </option>
+		   <option value="COK"> Cochin International Airpor</option>
+		   <option value="CNN">Kannur International Airport</option>
+		   <option value="ATQ">Sri Guru Ram Dass Jee International Airport</option>
+	   </section>
+   </select>		 
+		 <div>
+		 
+		 <div class="no">
+		 <label>Departing</label>
+		 <input type="date" name="date" id="date" class="form-control select-date spc ">
+		 </div>
+		 
+		 <!-- <div class="input-grp">
+		 <label>Returning</label>
+		 <input type="date" class="form-control select-date  spc">
+		 </div> -->
+		 
+		 <!-- <input type="date" name="begintime" step=1 required/> </br> -->
+				
+		
+		 <div class="no ">
+		 <label>Adults</label>
+		 <input type="number" class="form-control  spc " name="adult" id="adult" value="0">
+		 </div>
+		 <div class="no">
+		 <label>Children</label>
+		 <input type="number" class="form-control spc " name= "child" id="child" value="0">
+		 </div>
+		
+         <div class="no ">		
+		 <label class="sp">Travel Class</label>
+		 <select class="custom-select" name="class" id="class">
+		 <option value="eco" name="eco" id="eco">Economy Class</option>
+		 <option value="buis" nane="buis" id="buis">Buisness Class</option>
+		 <option value="fc" name="fc" id="fc">First Class</option>
+	     </select>
+		 </div>
+		 
+		</div>
+		 <div class="input-grp">
+			<input type="submit" class="btn-primary" value="Show"></br>
+		 </div>
+		 </div>
+		</form>
+  </body>
+</html>

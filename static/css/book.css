@@ -1,0 +1,245 @@
+body{
+    /* background-image:url("https://wallpapercave.com/wp/wp2574353.jpg"); */
+    background-color: #a88beb;
+    background-image: linear-gradient(315deg, #cf9fc2 0%, #a88beb  74%);
+
+   
+    }
+    .booking-form-box
+    {
+        max-width:800px;
+        /* border:1px solid #ced4da; */
+        margin:10% auto 0;
+        height: 450px;
+       }
+    .radio-btn
+    {
+        margin: 0 20px;
+    }
+    .radio-btn .btn
+    {
+        margin:20px 10px 20px 0;
+        box-shadow:none;
+    }
+    .radio-btn .btn::after
+    {
+        content:'';
+        height:15px;
+        width:15px;
+        top:-2px;
+        left:-1px;
+        background-color:#000;
+        position:relative;
+        display: inline-block;
+        border: 3px solid #fff;
+        visibility:visible;
+        border-radius:50%;
+    }
+    .radio-btn .btn:checked::after
+    {
+        content:'';
+        background-color:#000;
+        transition:0.5s;
+    }
+    /* .radio-btn span
+    {
+        color; #fff;
+        margin-right:5px;
+        font-size:12px;
+    } */
+    .booking-form-box
+    {
+        padding:0 20px 20px;
+        border: deeppink;
+
+    }
+    .booking-form label
+    {
+        margin-bottom:5px;
+        margin-top:10px;
+        font-size:12px;
+        color:#000;
+    }
+    input::placeholder
+    {
+        color: #fff ;
+    }
+    .input-grp
+    {
+        width:151px;
+        display:inline-block;
+    }
+    
+        .form {
+            display: block;
+            width: 100%;
+            height: calc(1.5em + .75rem + 2px);
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #000;
+            background-clip: padding-box;
+            border: 1px solid #000;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid darkmagenta;
+        
+        /* margin-bottom: 100px; */
+    }
+    /* .select-date::-webkit-inner-spin-button;
+    .select-date::-webkit-outer-spin-button;
+    {
+        -webkit-apperance: none;
+        margin:0;
+    } */
+    .selct-date::-webkit-calender-picker-indicator
+    {
+        background: transparent ;
+    }
+    .custom-select
+    {
+        color:#fff ;
+        font-size:12px ;
+        border:1px solid #ced4da ;
+        box-shadow:none ;
+        border-radius:0 ;
+        background:transparent ;
+        margin-top: -5px;
+        margin-left: 10px;
+        
+    }
+    .custom-select option
+    {
+        color: #333;
+    }
+    .flight
+    {
+        width:100px;
+        padding:9px 0;
+        font-size:12px;
+        border:1px solid #ced4da ;
+        box-shadow:none ;
+        border-radius:0 ;
+        background:transparent ;
+    }
+    .flight:hover
+    {
+        background:#fff;
+        color:000 ;
+        transition:0.5s
+    }
+    .spc{
+        margin-bottom: 30px;
+      
+    }
+    
+    
+     .sp{
+        padding-bottom: 7px;
+        padding-left: 10px;
+    }
+    .from{
+        width:100%;
+          }
+    
+          .to{
+            width:100%;
+              }
+    .btn-primary{   
+    margin-top: 20px;
+    margin-right: 500px; 
+   }
+  .date{
+      margin-left: 0px;
+  }
+  input[type=date]{
+      width: 100%;
+  }
+
+  .text1{
+      color: #000;
+      text-align: center;
+    position: absolute;    
+    top:50;
+    left: 40%;
+}
+.btn{
+    background-color: darkslategray;
+}
+.from {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    
+}
+.to {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    
+}
+input[type=date].form-control, input[type=datetime-local].form-control, input[type=month].form-control, input[type=time].form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: inherit;
+}
+
+input[type=number]
+{
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: inherit;
+}
+.custom-control-label::before, .custom-file-label, .custom-select {
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    border-radius: inherit;
+}
+select
+{
+    
+        background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        border-radius: inherit;
+   
+}
+#class
+{
+    background: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid black;
+        border-radius: inherit;
+   
+}
+.noo 
+{
+    margin-left: -10px;
+}
+.btn
+{
+  background-color: #17A2B8;
+  padding: 20px 50px;
+  color: white;
+}

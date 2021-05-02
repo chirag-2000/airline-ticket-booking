@@ -1,0 +1,83 @@
+html,body { height: 100%; }
+
+body{
+	display: -ms-flexbox;
+	display: -webkit-box;
+	display: flex;
+	-ms-flex-align: center;
+	-ms-flex-pack: center;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+
+	background-color: #a88beb;
+	background-image: linear-gradient(315deg, #cf9fc2 0%, #a88beb  74%);
+}
+.logo {
+    padding: 25px 0;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    font-size: 30px;
+    color: #aaaaaa;
+    font-weight: bold;
+  }
+form{
+	padding-top: 10px;
+	font-size: 13px;
+	margin-top: 30px;
+}
+
+.card-title{ font-weight:300; }
+
+.btn{
+	font-size: 13px;
+}
+
+.login-form{ 
+	width:320px;
+	margin:20px;
+}
+
+.sign-up{
+	text-align:center;
+	padding:20px 0 0;
+}
+
+span{
+	font-size:14px;
+}
+
+.submit-btn{
+	margin-top:20px;
+}
+
+.logo{
+	padding: 25px 0;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #efeddf;
+	margin-left: -15px;
+  }
+  input[type=password]
+  {
+	  background: transparent;
+	  border: none;
+	  outline: none;
+	  border-bottom: 1px solid #efeddf;
+	  border-radius: inherit;
+  }
+  
+  input[type=password] {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #efeddf;
+    color: white;
+    border-radius: inherit;
+}
+::-webkit-input-placeholder { /* Edge */
+	color: white;
+  }

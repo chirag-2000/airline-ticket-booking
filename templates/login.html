@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/login.css')}}">
+	<!-- <link rel="stylesheet" href="../static/css/style.css"> -->
+</head>
+
+<body>
+<!-- <img src="../static/image4.jpeg" alt="" width="100%" height="100%">  -->
+
+    <div class="container">
+        <form action="{{ url_for('login') }}" method="post">
+            <p>Good to see you back!</p>
+            <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br>
+            <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
+            <input type="submit" value="Sign in"><br>
+            <a href="/forget" style="color:#585858">Forgot Password?</a>
+        </form>
+
+        <div class="drops">
+            <div class="drop drop-1"></div>
+            <div class="drop drop-2"></div>
+            <div class="drop drop-3"></div>
+            <div class="drop drop-4"></div>
+            <div class="drop drop-5"></div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>  
+<head>  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='css/veify.css')}}">
+    <title>OTP Verification</title>  
+</head>  
+  <body>  
+    <div class="login-form">
+      <div class="card-body">
+          <h3 class="logo">OTP Varification</h3>
+          
+          <!--Password must contain one lowercase letter, one number, and be at least 7 characters long.-->
+          
+          <div class="card-text">
+              
+                  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Enter OTP</strong><br> Enter the otp send to your mail.
+    <a class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </a>
+  </div>
+  <form action="/verify" method="post">
+                  <div class="form-group">
+                      <!-- <label for="exampleInputEmail1">Your new password</label> -->
+                      <input type="text" class="form-control form-control-sm" name="otp" id="otp" placeholder="OTP">
+                  </div>
+                 
+                  <button type="submit" class="btn btn-primary btn-block submit-btn">Confirm</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</body>  
+</html>
