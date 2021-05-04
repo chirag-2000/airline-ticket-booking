@@ -18,9 +18,10 @@ from random import *
 
 
 app.config["MAIL_SERVER"]='smtp.gmail.com'  
+'  
 app.config["MAIL_PORT"] = 465      
-app.config["MAIL_USERNAME"] = 'kowshicksrinivasan@gmail.com'  
-app.config['MAIL_PASSWORD'] = 'August@2k'  
+app.config["MAIL_USERNAME"] = 'Your email'  
+app.config['MAIL_PASSWORD'] = 'your password'  
 app.config['MAIL_USE_TLS'] = False  
 app.config['MAIL_USE_SSL'] = True  
 
